@@ -1,1 +1,0 @@
--- Here are the commands used to create the database and table for the articles of the website.
