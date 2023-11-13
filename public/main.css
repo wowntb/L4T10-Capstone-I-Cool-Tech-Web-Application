@@ -17,9 +17,14 @@ h1 {
 
 h2,
 h3,
+h4,
 label {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     color: rgb(71, 71, 71);
+}
+
+sub {
+    color: rgb(255, 120, 50);
 }
 
 table,
@@ -34,4 +39,18 @@ div {
     border-radius: 10px;
     background-color: white;
     box-shadow: -5px 5px 2px lightblue;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:link {
+    color: rgb(255, 120, 50);
+}
+
+/* The preview class is styled */
+.preview {
+    font-size: 10pt;
+    color: rgba(0, 0, 0, 0.75);
 }
