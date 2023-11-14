@@ -7,6 +7,8 @@
 </head>
 
 <body>
+    <x-alert />
+
     <h1>Cool Tech</h1>
     <div>
         <!-- This is the HTML that will be rendered for the terms of service page. -->
@@ -74,6 +76,7 @@
         <h2>This page does not exist.</h2>
         @endif
     </div>
+    @include('footer')
 </body>
 
 </html>

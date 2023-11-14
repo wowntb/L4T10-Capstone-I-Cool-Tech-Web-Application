@@ -8,6 +8,8 @@
 </head>
 
 <body>
+    <x-alert />
+
     <h1>Cool Tech</h1>
     <div>
         <h2>{{$article[0]->title}}</h2>
@@ -35,6 +37,7 @@
         <h3>Category: {{$article[0]->category}}</h3>
         <h4>Date posted: {{$article[0]->creation_date}}</h4>
     </div>
+    @include('footer')
 </body>
 
 </html>

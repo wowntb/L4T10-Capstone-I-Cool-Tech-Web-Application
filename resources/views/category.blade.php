@@ -27,6 +27,8 @@ foreach ($articles as $article) {
 </head>
 
 <body>
+    <x-alert />
+
     <h1>Cool Tech</h1>
     <div>
         <?php
@@ -46,6 +48,7 @@ foreach ($articles as $article) {
             <h2>Sorry, there are no articles under the category "{{$unslug}}".</h2>
         <?php } ?>
     </div>
+    @include('footer')
 </body>
 
 </html>

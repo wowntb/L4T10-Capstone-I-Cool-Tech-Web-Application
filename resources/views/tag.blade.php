@@ -13,6 +13,8 @@ $selected_tag = $tags[2];
 </head>
 
 <body>
+    <x-alert />
+
     <h1>Cool Tech</h1>
     <div>
         <h2>Articles tagged "{{$selected_tag}}":</h2>
@@ -27,6 +29,7 @@ $selected_tag = $tags[2];
         @endif
         @endforeach
     </div>
+    @include('footer')
 </body>
 
 </html>

@@ -28,7 +28,7 @@ Route::get('/home', function () {
 Route::get('/article/{id}', function ($id) {
     // This query results in a table with 1 row where the id = $id.
     $article = DB::table('articles')->where('id', '=', $id)->get();
-    return view('/article', ['article' => $article]);
+    return view('article', ['article' => $article]);
 });
 
 Route::get('/tag/{tag_name}', function () {
@@ -41,6 +41,11 @@ Route::get('/category/{slug}', function () {
     return view('category', ['articles' => $articles]);
 });
 
-Route::get('legal/{subsection}', function ($subsection) {
+Route::get('/legal/{subsection}', function ($subsection) {
     return view('legal', ['subsection' => $subsection]);
+});
+
+Route::get('/search', function () {
+    $articles = DB::table('articles')->get();
+    return view('search', ['articles' => $articles]);
 });

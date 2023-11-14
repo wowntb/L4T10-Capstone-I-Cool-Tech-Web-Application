@@ -7,6 +7,8 @@
 </head>
 
 <body>
+    <x-alert />
+
     <h1>Cool Tech</h1>
     <div>
         <h2>Recent articles:</h2>
@@ -18,6 +20,7 @@
             <p class="preview">{{$articles[$i]->content}}...</p>
             @endfor
     </div>
+    @include('footer')
 </body>
 
 </html>

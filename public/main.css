@@ -36,7 +36,7 @@ td {
 
 div {
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: white;
     box-shadow: -5px 5px 2px lightblue;
 }
@@ -53,4 +53,16 @@ a:link {
 .preview {
     font-size: 10pt;
     color: rgba(0, 0, 0, 0.75);
+}
+
+#cookie-banner {
+    position: fixed;
+    width: 500px;
+    bottom: 15px;
+}
+
+#x-button {
+    color: rgb(255, 120, 50);
+    position: absolute;
+    right: 50px;
 }
